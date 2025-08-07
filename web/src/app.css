@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		@apply antialiased bg-background text-text-900 font-english;
+		font-size: 16px;
+	}
+	body {
+		@apply bg-background text-text-900 font-english;
+	}
+}
+
+html {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+/* Scroll bar beautify */
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 16px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #202225;
+	border-radius: 100vh;
+	/* border: 3px solid #edf2f7; */
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #a0aec0;
+}
