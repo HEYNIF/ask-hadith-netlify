@@ -1,0 +1,178 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_environment.js"
+    ]
+  },
+  "_Hadith.js": {
+    "file": "chunks/Hadith.js",
+    "name": "Hadith",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_environment.js": {
+    "file": "chunks/environment.js",
+    "name": "environment"
+  },
+  "_event-state.js": {
+    "file": "chunks/event-state.js",
+    "name": "event-state"
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_false.js": {
+    "file": "chunks/false.js",
+    "name": "false"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "name": "index",
+    "imports": [
+      "_index2.js"
+    ]
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js",
+    "name": "index",
+    "imports": [
+      "_false.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_index2.js",
+      "_environment.js"
+    ]
+  },
+  "_search.js": {
+    "file": "chunks/search.js",
+    "name": "search"
+  },
+  "_store.js": {
+    "file": "chunks/store.js",
+    "name": "store",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js": {
+    "file": "remote-entry.js",
+    "name": "remote-entry",
+    "src": "node_modules/@sveltejs/kit/src/runtime/app/server/remote/index.js",
+    "isEntry": true,
+    "imports": [
+      "_event-state.js",
+      "_false.js",
+      "_environment.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "name": "entries/fallbacks/error.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/svelte-5/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_exports.js",
+      "_index.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_false.js",
+      "_environment.js",
+      "_event-state.js",
+      "_exports.js",
+      "_index.js",
+      "_internal.js"
+    ]
+  },
+  "src/lib/NotoSans-Regular.ttf": {
+    "file": "_app/immutable/assets/NotoSans-Regular.qrNhSDbH.ttf",
+    "src": "src/lib/NotoSans-Regular.ttf"
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_search.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.b2_KhQTH.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_store.js",
+      "_search.js",
+      "_Hadith.js"
+    ]
+  },
+  "src/routes/+page.ts": {
+    "file": "entries/pages/_page.ts.js",
+    "name": "entries/pages/_page.ts",
+    "src": "src/routes/+page.ts",
+    "isEntry": true
+  },
+  "src/routes/api/og/+server.js": {
+    "file": "entries/endpoints/api/og/_server.js",
+    "name": "entries/endpoints/api/og/_server",
+    "src": "src/routes/api/og/+server.js",
+    "isEntry": true,
+    "imports": [
+      "_index2.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_server.BdHXNI7o.css"
+    ]
+  },
+  "src/routes/book/+page.svelte": {
+    "file": "entries/pages/book/_page.svelte.js",
+    "name": "entries/pages/book/_page.svelte",
+    "src": "src/routes/book/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_store.js",
+      "_Hadith.js"
+    ]
+  },
+  "src/routes/book/+page.ts": {
+    "file": "entries/pages/book/_page.ts.js",
+    "name": "entries/pages/book/_page.ts",
+    "src": "src/routes/book/+page.ts",
+    "isEntry": true
+  },
+  "src/routes/bookmarks/+page.svelte": {
+    "file": "entries/pages/bookmarks/_page.svelte.js",
+    "name": "entries/pages/bookmarks/_page.svelte",
+    "src": "src/routes/bookmarks/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index2.js",
+      "_Hadith.js"
+    ]
+  }
+}

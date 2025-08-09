@@ -1,0 +1,24 @@
+async function load({ url }) {
+  const collectionId = url.searchParams.get("collection_id");
+  const book = url.searchParams.get("book");
+  const refNumber = url.searchParams.get("ref_no");
+  const searchKey = url.searchParams.get("search_key");
+  if (!collectionId || !book || !refNumber) {
+    return {
+      hadith: null
+    };
+  }
+  const res = await fetch(
+    `https://ask-hadith.vercel.app/api/book?collection_id=${collectionId}&book=${book}&ref_no=${refNumber}`
+  );
+  if (res.ok) {
+    const data = await res.json();
+    return {
+      hadith: data,
+      searchKey
+    };
+  }
+}
+export {
+  load
+};
