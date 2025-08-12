@@ -62,6 +62,23 @@
 			searchHadiths();
 		}
 	};
+
+	const clearSearch = () => {
+		// Clear all search data without reloading the page
+		$searchKey = '';
+		$hadithsByCollection.clear();
+		$collectionsSorted = [];
+		$selectedCollection = '';
+		$firstHadithBase64 = '';
+		
+		// Remove search query from URL
+		window.history.pushState({}, '', '/');
+		
+		// Reset the notFound and searching states
+		notFound = false;
+		searching = false;
+	};
+
 	let showInstructions = false;
 </script>
 
@@ -86,6 +103,22 @@
 			</button>
 		</div>
 	</div>
+
+	<!-- Clear Search Button -->
+	{#if $searchKey || $collectionsSorted.length > 0}
+		<div class="text-center mt-4">
+			<button
+				class="inline-flex items-center px-4 py-2 bg-text-100 hover:bg-text-200 text-text-700 font-medium rounded-lg transition-colors duration-200 shadow-sm hover:shadow-md"
+				on:click={clearSearch}
+				aria-label="Clear Search"
+			>
+				<svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
+				Clear Search
+			</button>
+		</div>
+	{/if}
 
 	<div
 		class="mx-auto mt-6 flex max-w-sm flex-col items-center justify-center text-sm text-text-600"

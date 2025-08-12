@@ -5,6 +5,8 @@
 	import SearchSvg from '$lib/svgs/search.svelte';
 	import BookmarksSvg from '$lib/svgs/bookmarks.svelte';
 	import DownloadSvg from './svgs/download.svelte';
+	import TasbeehSvg from './svgs/tasbeeh.svelte';
+	import QiblaSvg from './svgs/qibla.svelte';
 
 	let deferredPrompt: BeforeInstallPromptEvent | null = null;
 	let showInstallButton = false;
@@ -42,6 +44,18 @@
 				<a class="flex flex-row items-center gap-1 hover:underline" href="/">
 					<SearchSvg />
 					Search
+				</a>
+			</li>
+			<li>
+				<a class="flex flex-row items-center gap-1 hover:underline" href="/tasbeeh">
+					<TasbeehSvg />
+					Tasbeeh
+				</a>
+			</li>
+			<li>
+				<a class="flex flex-row items-center gap-1 hover:underline" href="/qibla">
+					<QiblaSvg />
+					Qibla
 				</a>
 			</li>
 			<li>
